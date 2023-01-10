@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "mono_space";
+    src: url("../SpaceMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "mono_space_bold";
+    src: url("../SpaceMono-Bold.ttf");
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: hsl(185, 41%, 84%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "mono_space";
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 700px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#select {
+    padding-right: 60px;
+}
+
+#result {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+
+    padding: 30px 30px;
+    gap: 20px;
+}
+
+h5 {
+    margin: 5px;
+    color: hsl(184, 14%, 56%);
+    font-size: 13px;
+}
+
+.field {
+    position: relative;
+}
+
+.field input {
+    width: 100%;
+    border: none;
+    appearance: none;
+    background-color: hsl(189, 41%, 97%);
+    padding: 7px 10px;
+    border-radius: 3px;
+    outline-color: aqua;
+    font-size: 18px;
+    font-family: "mono_space_bold";
+    color: hsl(184, 14%, 56%);
+}
+
+#first {
+    margin-bottom: 35px;
+}
+
+.image {
+    position: absolute;
+    top: 25%;
+    left: 283px;
+    font-size: 18px;
+    background-size: 10px;
+}
+
+#dollar {
+    height: 18px;
+    width: 15px;
+    background-image: url("../images/icon-dollar.svg");
+    background-repeat: no-repeat;
+}
+
+#person_icon {
+    height: 15px;
+    width: 15px;
+    background-image: url("../images/icon-person.svg");
+    background-repeat: no-repeat;
+}
+
+
+
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#buttons>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-family: "mono_space_bold";
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+#buttons #custom {
+    width: 82px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    font-size: 18px;
+    text-align: center;
+    font-family: "mono_space_bold";
+    border-radius: 5px;
+}
+
+#buttons:hover {
+    cursor: pointer;
+}
+
+.procent {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+#top,
+#bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+#bottom {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+h4 {
+    margin: 5px 0;
+    font-size: 12px;
+    color: white;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 10px;
+    color: hsl(186.2, 70.6%, 34.7%);
+}
+
+.total {
+    font-size: 35px;
+    letter-spacing: -1px;
+    font-family: "mono_space_bold";
+    color: hsl(172, 67%, 45%);
+}
+
+#reset_button {
+    background-color: hsl(186.2, 64.7%, 23.3%);
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 8px;
+
+    align-self: flex-end;
+}
+
+#reset_button:hover {
+    cursor: pointer;
+}
