@@ -30,7 +30,7 @@ main {
 }
 
 #select {
-    padding-right: 60px;
+    padding-right: 50px;
 }
 
 #result {
@@ -52,7 +52,7 @@ h5 {
 }
 
 .field input {
-    width: 100%;
+    width: 95%;
     border: none;
     appearance: none;
     background-color: hsl(189, 41%, 97%);
@@ -61,17 +61,22 @@ h5 {
     outline-color: aqua;
     font-size: 18px;
     font-family: "mono_space_bold";
-    color: hsl(184, 14%, 56%);
+    color: hsl(183, 100%, 15%);
+    text-align: end;
 }
 
 #first {
     margin-bottom: 35px;
 }
 
+#second {
+    border: 2px solid #dc7b26;
+}
+
 .image {
     position: absolute;
-    top: 25%;
-    left: 283px;
+    top: 20%;
+    left: 14px;
     font-size: 18px;
     background-size: 10px;
 }
@@ -130,7 +135,7 @@ h5 {
     cursor: pointer;
 }
 
-.procent {
+#buttons #procent {
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
 }
@@ -158,6 +163,20 @@ p {
     color: hsl(186.2, 70.6%, 34.7%);
 }
 
+#zero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#orange_text {
+    margin: 5px;
+    font-family: "mono_space_bold";
+    color: #dc7b26;
+    font-size: 12px;
+    display: none;
+}
+
 .total {
     font-size: 35px;
     letter-spacing: -1px;
@@ -171,10 +190,15 @@ p {
     color: whitesmoke;
     border-radius: 5px;
     padding: 8px;
-
+    font-family: "mono_space_bold";
     align-self: flex-end;
 }
 
 #reset_button:hover {
     cursor: pointer;
+}
+
+#result .reset_all {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(186.2, 64.7%, 23.3%);
 }

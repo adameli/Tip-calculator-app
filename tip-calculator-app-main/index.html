@@ -28,21 +28,25 @@
     <section id="select">
       <h5>Bill</h5>
       <label class="field">
-        <input type="text" id="first" placeholder="0">
+        <input type="text" onfocus="this.value=''" id="first" placeholder="0">
         <div class="image" id="dollar"></div>
       </label>
       <h5>Select Tip %</h5>
       <div id="buttons">
-        <div class="procent">5%</div>
-        <div class="procent">10%</div>
-        <div class="procent">15%</div>
-        <div class="procent">25%</div>
-        <div class="procent">50%</div>
+        <div>5%</div>
+        <div>10%</div>
+        <div>15%</div>
+        <div>25%</div>
+        <div>50%</div>
         <input type="text" id="custom" placeholder="Custom">
       </div>
-      <h5>Number of People</h5>
+      <div id="zero">
+        <h5>Number of People</h5>
+        <p id="orange_text">Can't be zero</p>
+      </div>
+
       <label class="field">
-        <input type="text" placeholder="0">
+        <input type="text" onfocus="this.value=''" placeholder="0">
         <div class="image" id="person_icon"></div>
       </label>
     </section>
@@ -53,14 +57,14 @@
           <h4>Tip Amount</h4>
           <p>/ person</p>
         </div>
-        <div class="total">$0.00</div>
+        <div class="total" id="top_total">$0.00</div>
       </div>
       <div id="bottom">
         <div class="text">
           <h4>Total</h4>
           <p>/ person</p>
         </div>
-        <div class="total">$0.00</div>
+        <div class="total" id="bottom_total">$0.00</div>
       </div>
       <div id="reset_button">RESET</div>
     </section>
