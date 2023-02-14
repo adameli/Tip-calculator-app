@@ -2,6 +2,7 @@
 
 function action(event) {
 
+
     input_dom[1].addEventListener("keyup", f3)
 
     function f3(event) {
@@ -68,4 +69,8 @@ function reset(event) {
     for (let button of buttons_dom) {
         button.id = ""
     }
+}
+
+function action2(event) {
+    console.log(custom_dom.value);
 }
